@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(0, 255, 0, 0.168);
+  font-size: 16px;
+  font-family: "Fredoka", sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  background-color: white;
+  width: 800px;
+  margin: 100px auto;
+  padding: 20px 30px;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+
+label,
+.query-type-radios-title {
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 7px;
+}
+
+.first-name-textbox,
+.last-name-textbox,
+.email-address-textbox,
+.message-textbox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.first-last-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.first-last-name input {
+  width: 363px;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.email-address-textbox input {
+  width: 740px;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.radios-boxes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.general-enquiry-container,
+.support-request-container {
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 5px 20px;
+  width: 363px;
+  height: 40px;
+  vertical-align: middle;
+}
+
+.general-enquiry-container label,
+.support-request-container label {
+  margin-bottom: 0;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+.general-enquiry-container input,
+.support-request-container input {
+  vertical-align: middle;
+}
+
+textarea {
+  width: 740px;
+  height: 100px;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  text-align: left;
+  vertical-align: top;
+}
+
+.checkbox-container {
+  margin: 20px 0;
+}
+
+.checkbox-container label {
+  margin-left: 10px;
+}
+
+.submit-button {
+  background-color: rgb(8, 142, 57);
+  color: white;
+  padding: 16px 0;
+  font-family: "Fredoka";
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s;
+  margin-bottom: 10px;
+}
+
+.submit-button:hover {
+  background-color: rgb(18, 171, 74);
+}
+
+.submit-button:active {
+  background-color: rgb(67, 207, 118);
+}
+
+.first-last-name input,
+.email-address-textbox input,
+.general-enquiry-container,
+.support-request-container,
+.message-textbox textarea,
+.submit-button {
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2);
+}
